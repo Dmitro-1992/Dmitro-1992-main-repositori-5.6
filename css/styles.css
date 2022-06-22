@@ -4,29 +4,10 @@
    @import './_fonts.css';
 /* зминни  */
    @import './_variables.css';
-   /* зброс стылив*/
-   @import './_normalaise.css';
-
+/* зброс стылив*/
+   @import './_normalise.css';
   
- body{
-  margin: 0;
-  background-color: var(--logo-footer-color);
-  color: var(--primary-text-color);
-      
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.02em;
-  font-size: 14;
-   }
-
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-/* 
-  border: 2px dashed #2a2a2a; */
-}
-
+  
 
 /* --------------------------------------------------------------------- */
 /*                        ШАПКА----ЛОГОТИП-КЛАС-СПАМ                    */
@@ -34,6 +15,7 @@
 background-color: var(--background-section);
 padding-top: 24px;
 padding-bottom: 24px;
+
 }
 .logo-studio{
 color: var(--logo-black-);
@@ -51,17 +33,21 @@ letter-spacing: 0.03em;
 }
  
 /*                               шапка-----навигация                    */
-
+.navigation{
+display: flex;
+}
 .navigation-menu{
-list-style: none;  
-display:inline-block;
+display: flex;
+list-style: none; 
+text-align: center;
+align-items: center;
+margin-left: 30px;
 }
-.navigation-list{
-display: inline-block;
-}
+
 .navigation-list:not(:last-child){
   margin-right: 50px;
 }
+
 
 .navigation-link {
 text-decoration: none;
@@ -78,7 +64,12 @@ color: var(--color-text);
  /*                               шапка контакты                       */
 .connection-menu{
     list-style: none;
-
+    display: flex;
+    text-align: center;
+  align-items: center;
+}
+.connection-list:not(:last-child){
+margin-right: 50px;
 }
 .connection-link{
 text-decoration: none;
@@ -117,7 +108,7 @@ color: var(--hero-color-title);
  } 
  /*                          кнопка в герой                       */
 .hero-button {
-display: inline-block;
+display:block;
 font-weight: 700;
 font-size: 16px;
 min-width: 136px;
@@ -139,15 +130,18 @@ border: none;
 .benefits{
 padding: 94px 0;
 background-color:var(--background-section);
-
 }
 
- /* .benefits-menu{
- display: flex; 
-}  */
+.benefits-menu{
+display: flex;
+} 
 .benefits-list{
  list-style: none;
  width: 270px;
+ display: inline-block;
+}
+.benefits-list:not(:first-child){
+margin-left: 30px;
 }
 /*               секция benefits(приймучества)  заголовок h3              */
 .benefits-title{
@@ -188,19 +182,19 @@ background-color:var(--background-section);
  line-height: 1.17;
  text-align: center;
   }
-
-
+.work-menu{
+display: flex;
+}
 
 /*                секция work (робота)  work-list                     */
 .work-list{
 list-style: none;
 border: 1px solid tomato;
-}
-.work-list+ .work-list{
-  margin-top: 30px;
-}
 
-
+}
+.work-list:not(:last-child){
+  margin-right: 30px;
+}
 /*                   секция work (робота)  work-list h2 Чем мы занимаемся   */
 
 /* -------------------------------------------------------------------------*/
@@ -220,15 +214,14 @@ border: 1px solid tomato;
 /*                    секция team (команда) team-menu ul                   */
 .team-menu{
     list-style: none;
+    display: flex;
 }
-.team-list+ .team-list{
-  margin-top: 30px;
-
-}
-.team-list{
-  border: 1px solid crimson;
-}
-bo
+/* .team-list+ .team-list{
+  margin-left: 30px;
+} */
+ .team-list:not(:last-child){
+  margin-right: 30px;
+ }
 
 /*                    секция team (команда) h3                             */
 .team-our{
