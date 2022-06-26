@@ -13,14 +13,8 @@
 /*                        ШАПКА----ЛОГОТИП-КЛАС-СПАМ                    */
 .header{
 background-color: var(--background-section);
-padding-top: 24px;
-padding-bottom: 24px;
+}
 
-}
-.logo-studio{
-color: var(--logo-black-);
-font-family: 'Raleway';
-}
 .logo {
 font-family: 'Raleway';
 font-style: normal;
@@ -31,23 +25,31 @@ font-size: 26px;
 line-height: 1.2;
 letter-spacing: 0.03em;
 }
+.logo-studio{
+  color: var(--logo-black-);
+  font-family: 'Raleway';
+  }
  
 /*                               шапка-----навигация                    */
+
+.navigation-flex{
+  display: flex;
+  align-items: center;
+}
 .navigation{
-display: flex;
+  display: flex;
+  align-items: center;
 }
 .navigation-menu{
-display: flex;
-list-style: none; 
-text-align: center;
-align-items: center;
-margin-left: 30px;
-}
+  display: flex;
+/* padding-top: 32px;
+  padding-bottom: 32px; */
+  margin-left: 93px;
 
-.navigation-list:not(:last-child){
-  margin-right: 50px;
 }
-
+.navigation-list+ .navigation-list{
+  margin-left: 50px;
+}
 
 .navigation-link {
 text-decoration: none;
@@ -63,15 +65,16 @@ color: var(--color-text);
 }
  /*                               шапка контакты                       */
 .connection-menu{
-    list-style: none;
-    display: flex;
-    text-align: center;
-  align-items: center;
+list-style: none;
+display: flex;
+margin-left: auto;
+
 }
 .connection-list:not(:last-child){
 margin-right: 50px;
 }
 .connection-link{
+display: block;
 text-decoration: none;
 font-weight: 500;
 font-size: 14px;
@@ -295,15 +298,21 @@ text-decoration: none;
 /*                               PORTFOLIO                                */
 .portfolio{
   background-color:var(--background-section);
+  padding-bottom: 94px;
 }
-
 /*                секция  portfolio(портфолио) portfolio-list li         */
+.portfolio-menu{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .portfolio-list{
  list-style: none;
- border: 2px dashed #2a2a2a;
+/* margin-left: auto; */
 }
-.portfolio-list+ .portfolio-list{
-margin-top: 8px;
+.portfolio-list:not(:last-child){
+  margin-right: 8px;
 }
 /*               секция  portfolio(портфолио) prtfolio-button КНОПКА         */
 .portfolio-button{
@@ -320,16 +329,16 @@ color: var(--color-text-wait);
 }
 /*                          cards-menu       ul                        */
 .cards-menu{
-    list-style: none
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-.cards-list{
-  border: 2px dashed crimson;
-}
+
+
 .cards-img{
   margin-bottom: 20px;
-}
-.cards-list+ .cards-list{
-  margin-top: 30px;
+
 }
 /*                         cards-title      h2                                   */
 .cards-title{
@@ -337,7 +346,6 @@ color: var(--color-text-wait);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    border: 2px dashed cyan;
     margin-bottom: 4px;
 }
 /*                           cards-work      p                       */
@@ -346,6 +354,7 @@ color: var(--color-text-wait);
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
-    color: var(--color-p);  
-    border: 2px dashed #2a2a2a;
+    color: var(--color-p); 
 }
+
+
