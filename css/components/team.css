@@ -1,0 +1,37 @@
+.team{
+    background-color: var(--background-secyion-team);
+    padding: 94px 0;
+ 
+ }
+ .team-title{
+   text-align: center;
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 42px;
+     letter-spacing: 0.03em;
+     margin-bottom: 50px;
+ }
+ /*                    секция team (команда) team-menu ul                   */
+ .team-menu{
+    text-align: center;
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+ } 
+ /*                   секция team (команда) h3                             */
+ 
+ .team-our{
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1.19;
+ 
+ letter-spacing: 0.03em;
+ }
+ /*                      секция team (команда) team-speciality p             */
+ .team-speciality{
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.19;
+     letter-spacing: 0.03em;
+     color: var(--color-p);
+ }

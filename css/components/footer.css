@@ -1,0 +1,44 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--logo-black-);
+    } 
+    .footer-logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--logo-wait);
+    text-decoration: none;
+    }
+    .logo-web{
+     color: var(--logo-color);
+    }
+    .address-menu{
+        list-style: none;
+    }
+    .address{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--color-text-wait);
+        text-decoration: none;
+    }
+       /*   секция футер(подвал) contact-menu ul             */
+    .contact-menu{
+        list-style: none;
+    }
+    .contact-link{
+        font-family: 'Roboto';
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--footer-contact-color);
+    }
